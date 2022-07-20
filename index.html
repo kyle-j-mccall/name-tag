@@ -17,17 +17,45 @@
 
 <body>
     <header>
-        <img src="/assets/html_css_js.png">
-        <h1>Web App</h1>
+        <h1>Customize A Name Tag</h1>
     </header>
+    <div class="inputs">
+        <div class="change-name">
+            <input type="text" id="name-input">
+            <button id="name-btn">Update name</button>
+        </div>
+        <div class="change-font">
+            <label for="fonts">Choose a font</label>
+            <select id="fonts" name="fonts">
+                <option value="monospace" id="monospace">Monospace</option>
+                <option value="sans-serif" id="sans-serif">Sans-serif</option>
+                <option value="cursive" id="cursive">Cursive</option>
+                <option value="cambria" id="cambria">Cambria</option>
+            </select>
+            <!-- <button>Select a font</button> -->
+        </div>
+        <div class="change-color">
+            <input type="text" id="color-input">
+            <button id="color-btn">Enter a color</button>
+        </div>
+    </div>
 
-    <main>
+    <div class="nametag-container">
+        <div class="introduction" id="top-section">
+            <p>Hello my name is</p>
+        </div>
+        <div class="name-container">
+            <p id="user-name">Kyle</p>
+        </div>
+        <div class="footer" id="bottom-section">
+            
+        </div>
+    </div>
 
-    </main>
 
-    <footer>&copy;2022 Software Developer</footer>
+    
 
-    <script type="module" src="app.js"></script>
+   
 </body>
-
+<script type="module" src="app.js"></script>
 </html>
