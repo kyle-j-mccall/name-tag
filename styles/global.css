@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 :root {
     --background: rgb(224, 234, 247);
     --header-background: white;
@@ -9,20 +13,98 @@ body {
     font-family: 'Rubik', san-serif;
     background: var(--background);
     display: grid;
-    grid-template-rows: auto 1fr auto;
+    grid-template-rows: 1fr 1fr 3fr;
+    font-size: 40px;
+    font-family: cursive;
+   
 }
 
 header {
-    position: sticky;
-    top: 0;
     display: flex;
+    justify-content: center;
     align-items: center;
-    background-color: var(--header-background);
+    background-color: rgb(240, 225, 220);
+    color: rgb(136, 48, 48);
 }
 
-main {
-    padding: 20px;
+.inputs {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
+
+.nametag-container {
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr;
+    background-color: rgb(133, 133, 216);
+    height: 250px;
+    width: 400px;
+    justify-self: center;
+    align-self: center;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    
+}
+
+.introduction {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(28, 75, 145);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    
+}
+
+.name-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(240, 225, 220);
+    font-weight: bold;
+    font-size: 40px;
+    
+    
+}
+
+label {
+    font-size: 25px;
+    color: rgb(136, 48, 48);
+}
+
+#fonts {
+    cursor: pointer;
+}
+
+button {
+    cursor: pointer;
+    padding: 2px;
+    margin: 5px;
+    background-color: blanchedalmond;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    font-family: monospace;
+    color: rgb(136, 48, 48);
+}
+
+button:hover {
+    transform: scale(1.1);
+    transition: .2s ease-in-out;
+}
+
+input {
+    height: 20px;
+}
+
+.footer {
+    background-color: bisque;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: rgb(28, 75, 145);
+}
+
 
 footer {
     position: sticky;
